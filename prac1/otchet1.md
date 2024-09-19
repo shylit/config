@@ -65,7 +65,7 @@ localhost:~# awk '{print $2, $1}' /etc/protocols | sort -nr | head -n 5
 +-----------------------+
 ```
 ### Решение.
-Скрипт к задаче приведен ниже, а также его можно найти [тут][prac1/prac1_3.sh].
+Скрипт к задаче приведен ниже, а также его можно найти [тут][https://github.com/shylit/config/blob/f8ac2508156de0bedac8b538bb8a872f02bb976b/prac1/prac1_3.sh].
 ```
 #!/bin/bash
 
