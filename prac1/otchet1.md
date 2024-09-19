@@ -65,19 +65,21 @@ localhost:~# awk '{print $2, $1}' /etc/protocols | sort -nr | head -n 5
 +-----------------------+
 ```
 ### Решение.
+Скрипт к задаче приведен ниже, а также его можно найти тут.
 ```
 #!/bin/bash
 
-text=$*
+text="$*"
 length=${#text}
 
-for i in $(seq 1 $((length + 2))); do
-    line+="-"
-done
+# Создаем строку границы
+line=$(printf '%*s' $((length + 2)) | tr ' ' '-')
 
+# Выводим баннер
 echo "+${line}+"
 echo "| ${text} |"
 echo "+${line}+"
+
 ```
 ### Пояснение.
 
